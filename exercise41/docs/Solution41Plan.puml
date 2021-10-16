@@ -18,6 +18,10 @@ Class NameSorter{
     'export all sorted names to an output file
     +exportNames(String output)
 
+    'for testing purposes; changing arraylist names
+    +nameList(List<String> name)
+    'for testing purposes; returning the arrayList names
+    +getList()
 }
 
 Solution41 --o NameSorter

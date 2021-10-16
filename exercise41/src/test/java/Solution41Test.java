@@ -1,23 +1,30 @@
-import baseline.Solution41;
+import baseline.NameSorter;
 import org.junit.jupiter.api.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class Solution41Test {
-    Solution41 test = new Solution41();
-
-    @Test
-    void inputTest() {
-        //create a sample input
-        //compare the arraylist the readNames method created with
-        //a pre-made arraylist with said names
-        //assertEquals();
-    }
+    NameSorter test = new NameSorter();
 
     @Test
     void sortTest() {
         //Create an unsorted list to be sorted by sortNames()
+        List<String> unsorted = new ArrayList<>();
+        unsorted.add("Victoria Trump");
+        unsorted.add("Matthew Trump");
+        unsorted.add("Billybob Jenkins");
+        test.nameList(unsorted);
         //run the sortNames method
+        test.sortNames();
+        //create a sorted list of names
+        List<String> sorted = new ArrayList<>();
+        sorted.add("Billybob Jenkins");
+        sorted.add("Matthew Trump");
+        sorted.add("Victoria Trump");
         //compare the output with a presorted list
+        assertEquals(sorted , test.getList());
     }
 }
