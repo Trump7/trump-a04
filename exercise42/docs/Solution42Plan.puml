@@ -1,0 +1,16 @@
+@startuml
+
+class Solution42{
+    +main(String args[])
+
+}
+
+class parseCSV{
+    +readCSV(String input)
+    +organizeData()
+    +exportData()
+}
+
+Solution42 --o parseCSV
+
+@enduml
