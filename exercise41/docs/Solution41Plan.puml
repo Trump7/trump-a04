@@ -1,11 +1,24 @@
 @startuml
-'https://plantuml.com/sequence-diagram
 
-autonumber
+Class Solution41{
+    +main(args: String[])
+    'NameSorter sort = new NameSorter()
+    'sort.readNames("input.txt")
+    'sort.sortNames()
+    'sort.exportNames("output.txt")
+}
 
-Alice -> Bob: Authentication Request
-Bob --> Alice: Authentication Response
+Class NameSorter{
+    -ArrayList<String> names;
+    'read names into an array list
+    +readNames(String input)
+    'take in the array list to sort
+    'return sorted names
+    +sortNames()
+    'export all sorted names to an output file
+    +exportNames(String output)
 
-Alice -> Bob: Another authentication Request
-Alice <-- Bob: another authentication Response
+}
+
+Solution41 --o NameSorter
 @enduml
