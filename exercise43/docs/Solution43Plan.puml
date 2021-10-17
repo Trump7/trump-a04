@@ -1,0 +1,25 @@
+@startuml
+
+class Solution43{
+    -String name
+    -String author
+    -String CSS
+    -String JS
+    +main(String args[])
+    'collect all variable information in main method
+}
+
+class WebsiteBuilder{
+    +buildWebsite(String WebsiteName)
+    'This will create the proper folder for the website
+    +createJS(String WebsiteName)
+    'This will create a JS folder
+    +createCSS(String WebsiteName)
+    'This will create a CSS folder
+    +createHTML(String WebsiteName, String Author)
+    'This will make a new html document
+    'along with the name and author inscribed in the document
+}
+
+Solution43 --o WebsiteBuilder
+@enduml
