@@ -1,0 +1,14 @@
+@startuml
+
+class Solution44{
+    -boolean isPresent = false
+    +main(String args[])
+    'while loop until isPresent is equal to true
+}
+
+class JsonSearcher{
+    +isNamePresent(String productName)
+}
+
+Solution44 --o JsonSearcher
+@enduml
