@@ -6,9 +6,10 @@ class Solution42{
 }
 
 class parseCSV{
-    +readCSV(String input)
+    -List<> temp = new ArrayList<>
+    +readCSV(String input.txt)
     +organizeData()
-    +exportData()
+    +exportData(String output.txt)
 }
 
 Solution42 --o parseCSV
