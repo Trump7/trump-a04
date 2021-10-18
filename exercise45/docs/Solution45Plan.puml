@@ -1,0 +1,19 @@
+@startuml
+
+class Solution45{
+    +main(String args[])
+}
+
+class ReadWords{
+    <<constructor>> ReadWords()
+    +readLines()
+}
+
+class WriteWords{
+    <<constructor>> WriteWords(String name, List<> list)
+    +writeFile()
+}
+
+Solution45 --o ReadWords
+Solution45 --o WriteWords
+@enduml
