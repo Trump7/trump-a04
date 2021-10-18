@@ -1,8 +1,9 @@
 /*
- *  UCF COP3330 Fall 2021 Assignment 3 Solutions
+ *  UCF COP3330 Fall 2021 Assignment 4 Solutions
  *  Copyright 2021 Matt Trump
  */
 
+import baseline.JsonSearcher;
 import org.junit.jupiter.api.Test;
 
 import java.io.FileNotFoundException;

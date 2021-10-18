@@ -1,3 +1,9 @@
+/*
+ *  UCF COP3330 Fall 2021 Assignment 4 Solutions
+ *  Copyright 2021 Matt Trump
+ */
+package baseline;
+
 import java.util.Scanner;
 
 public class Solution43 {
