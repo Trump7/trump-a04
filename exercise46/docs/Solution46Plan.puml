@@ -1,0 +1,20 @@
+@startuml
+
+class Solution46{
+    +main(String args[])
+}
+
+class ReadFile{
+    <<constructor>> ReadFile()
+    +read()
+    +getMap()
+}
+
+class PrintHistogram{
+    <<constructor>> PrintHistogram(HashMap <String, int> map)
+    +printChart()
+}
+
+Solution46 --o ReadFile
+Solution46 --o PrintHistogram
+@enduml
